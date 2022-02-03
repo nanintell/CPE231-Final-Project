@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Airport Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <!-- import font to html -->
+    <link rel="stylesheet" type="text/css" href="font.css">
+  </head>
+  <body>
+    <h1>Add Airport</h1>
+                <form action="addairportform.php" method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="airportname">Airport name</label>
+                            <input type="text" class="form-control" id="airportname"  name="airportname" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="iataCode">iata Code</label>
+                            <input type="text" class="form-control" id="iataCode"  name="iataCode" required>
+                        </div>
+                        
+                        <div class="form-group col-md-6">
+                            <label for="airportaddress">Address</label>
+                            <input type="text" class="form-control" id="airportaddress"  name="airportaddress" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="lastUsed">Last Used</label>
+                            <input type="date" class="form-control" id="lastUsed"  name="lastUsed" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="airportstatus">Status</label>
+                            <select name="airportstatus" class="form-control">
+                                <option value="์Normal">Normal</option>
+                                <option value="Maintenance">Maintenance</option>
+                                <option value="Closed">Closed</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="limitEntry">Limit Entry</label>
+                            <input type="int" class="form-control" id="limitEntry" name="limitEntry" required>
+                        </div>
+                    </div>
+
+    <h1>Add Manager</h1>
+                <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="managername">Name</label>
+                            <input type="text" class="form-control" id="managername"  name="managername" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="managersalary">Salary</label>
+                            <input type="int" class="form-control" id="managersalary"  name="managersalary" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="manageraddress">Address</label>
+                            <input type="text" class="form-control" id="manageraddress"  name="manageraddress" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="managerbirth">Birthday</label>
+                            <input type="date" class="form-control" id="managerbirth"  name="managerbirth" required>
+                        </div>
+                </div>
+
+    <h1>Add Engineer</h1>
+                <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="engineername">Name</label>
+                            <input type="text" class="form-control" id="engineername"  name="engineername" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="engineersalary">Salary</label>
+                            <input type="int" class="form-control" id="engineersalary"  name="engineersalary" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="engineeraddress">Address</label>
+                            <input type="text" class="form-control" id="engineeraddress"  name="engineeraddress" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="engineerbirth">Birthday</label>
+                            <input type="date" class="form-control" id="engineerbirth"  name="engineerbirth" required>
+                        </div>
+                </div>
+
+    <h1>Add Airplane</h1>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="type">Type</label>
+                <input type="text" class="form-control" id="type"  name="type" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="flexiSeat">Flexi Seat</label>
+                <input type="int" class="form-control" id="flexiSeat"  name="flexiSeat" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="valueSeat">Value Seat</label>
+                <input type="int" class="form-control" id="valueSeat"  name="valueSeat" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="saverSeat">Saver Seat</label>
+                <input type="int" class="form-control" id="saverSeat"  name="saverSeat" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="startDate">Start Date</label>
+                <input type="date" class="form-control" id="startDate"  name="startDate" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="used">Used</label>
+                <input type="int" class="form-control" id="used"  name="used" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="airplanestatus">Status</label>
+                <select name="airplanestatus" class="form-control">
+                    <option value="์Normal">Normal</option>
+                    <option value="Maintenance">Maintenance</option>
+                    <option value="Retired">Retired</option>
+                </select>
+            </div>
+        </div>
+
+        <div style="width:100%">
+            <input type="submit" value="Add"  style="border-radius: 15px; width: 100px; border: 1px solid black; font-size: 25px;background-color: white;" required>
+        </div>
+
+        </form>
+
+                <button type="button" name="back" onclick="location.href='staffview.php'">Back</button>
+
+
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Customer Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <style>
+        * {
+            font-family: 'Waffle Regular';
+        }
+
+        .element {
+            background-color: #119FA4;
+            /* padding: 15px; */
+            opacity: 0.85;
+            width: 100%;
+            color: white;
+            font-size: 50px;
+            text-align: left;
+            margin: 20px 0px;
+        }
+
+        .element2 {
+            background-color: rgba(17, 159, 164, 0.36);
+            /* padding: 15px; */
+            width: 100%;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            margin: 20px 0px;
+            padding: 10px 500px;
+        }
+
+        .form-control {
+            font-size: 25px !important;
+        }
+
+        .picstyle {
+            width: 50px;
+            position: absolute;
+            z-index: 999;
+            bottom: -160px;
+        }
+
+        .button1 {
+            background-color: rgba(255, 255, 255, 0.3);
+            background-position: center;
+            border: none;
+            padding: 0px 0px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 32px;
+            font-family: 'Waffle Regular';
+            border-radius: 12px;
+            color: white;
+
+        }
+
+        .menubar {
+            background-color: #225A69;
+            /* padding: 15px; */
+            opacity: 0.85;
+            width: 100%;
+            color: white;
+            font-size: 30px;
+            text-align: right;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="menubar">
+                <div class="col">
+                    <div class="col-sm-5" style="color:white; font-size:35px; text-align:center;margin-left:800px;">
+                        <div class="form-group">
+                            <a href='homepage.php' class="button1" style="width:250px">
+                                <img src="picture/house.png" alt="" width="30px">
+                                <strong> Home</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=picstyle>
+        <img src="picture/more07.png" alt="" width=500px;>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="element">
+                <img src="picture/graduation.png" alt="" width="100px">
+                <span style="padding-left: 30px;">Customer Register</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="element2">
+                <form action="customerinsert.php" method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+                        </div>
+                        
+                        <div class="form-group col-md-6">
+                            <label for="idcard">ID Card</label>
+                            <input type="int" class="form-control" id="idcard" placeholder="ID Card" name="idcard">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="birth">Birthday</label>
+                            <input type="Date" class="form-control" id="birth" placeholder="Birthday" name="birth">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="gender">Gender</label>
+                            <select name="gender" class="form-control">
+                                <option value="f">Female</option>
+                                <option value="m">Male</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phone">Phone</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Phone" name="phone">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="pass">Password</label>
+                            <input type="password" class="form-control" id="pass" placeholder="Password" name="pass">
+                        </div>
+
+                        <div style="width:100%">
+                            <input type="submit" value="submit" style="border-radius: 15px; width: 100px; border: 1px solid black; font-size: 25px;background-color: white;">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
